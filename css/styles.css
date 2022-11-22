@@ -220,7 +220,7 @@ header .icon {
   color: var(--accent-color);
 }
 
-.footer .item:not(:last-child) {
+.address .item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -359,7 +359,7 @@ header .icon {
   margin-right: 30px;
 }
 
-.features .icon-container {
+.features .thumb {
   display: flex;
   justify-content: center;
   align-items: center;
