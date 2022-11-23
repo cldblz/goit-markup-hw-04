@@ -191,6 +191,7 @@ header .icon {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-contacts {
@@ -224,14 +225,10 @@ header .icon {
   margin-bottom: 9px;
 }
 
-.footer-social {
-  padding-top: 12px;
-}
-
 .footer-social-title {
   margin-bottom: 20px;
 
-  font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 
@@ -256,7 +253,8 @@ header .icon {
   border-radius: 50%;
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white);
 }
@@ -266,7 +264,7 @@ header .icon {
 }
 
 .footer-social .icon {
-  --color3: currentColor;
+  --color1: currentColor;
 }
 
 /* INDEX */
@@ -283,8 +281,8 @@ header .icon {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-
   max-width: 1600px;
+  height: 600px;
 
   text-align: center;
 
@@ -477,13 +475,14 @@ header .icon {
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white);
 }
 
 .team .icon {
-  --color3: currentColor;
+  --color1: currentColor;
 }
 
 /* Clients */
@@ -496,7 +495,8 @@ header .icon {
   margin-right: 30px;
 }
 
-.clients .client-link:hover {
+.clients .client-link:hover,
+.clients .client-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -516,7 +516,7 @@ header .icon {
 }
 
 .clients .icon {
-  --color3: currentColor;
+  --color1: currentColor;
 }
 
 /* PORTFOLIO */
@@ -576,6 +576,12 @@ header .icon {
   flex-wrap: wrap;
 }
 
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
 .portfolio-img {
   display: block;
 }
@@ -594,7 +600,8 @@ header .icon {
   width: calc((100% - 60px) / 3);
 }
 
-.portfolio-list > .item:hover {
+.portfolio-list .portfolio-link:hover,
+.portfolio-list .portfolio-link:focus {
   box-shadow: 0px 1px 1px var(--first-shadow-color),
     0px 4px 4px var(--sixth-shadow-color),
     1px 4px 6px var(--seventh-shadow-color);
